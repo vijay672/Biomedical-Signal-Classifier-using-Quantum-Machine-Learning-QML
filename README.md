@@ -174,8 +174,6 @@ With all tracked artifacts present, `src.q1_submission` validates and loads the 
 | [Source code](src/) | Data processing, classifier and benchmarking implementation |
 | [Notebook](main.ipynb) | Executed experiment narrative |
 | [Report](report.md) | Full methodology, interpretation and results |
-| [Judge summary](docs/JUDGE_SUMMARY.md) | Short evaluator-friendly overview |
-| [Verification](docs/FINAL_VERIFICATION.md) | Reproduction and artifact-integrity evidence |
 | [Figures](results/figures/) | Generated circuits, processor maps and performance figures |
 | [Tables](results/tables/) | Machine-readable measurement evidence |
 
