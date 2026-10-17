@@ -1,0 +1,138 @@
+{
+  "architecture": {
+    "entanglement": "directed nearest-neighbor ring of CNOT gates",
+    "input_encoding": "RY angle encoding",
+    "num_qubits": 4,
+    "readout": "parity of measured four-bit outcomes",
+    "trainable_layers": 2,
+    "trainable_rotations_per_qubit_per_layer": [
+      "RY",
+      "RZ"
+    ]
+  },
+  "dataset": {
+    "features": 4,
+    "generation_random_state": 42,
+    "preprocessing": "shared MinMaxScaler fitted on training rows only to [0, pi]",
+    "source": "make_classification",
+    "split_random_state": 42,
+    "test_samples": 40,
+    "test_size": 0.2,
+    "train_samples": 160
+  },
+  "environment": {
+    "numpy": "2.4.6",
+    "qiskit": "2.5.2",
+    "qiskit_aer": "0.17.2",
+    "qiskit_machine_learning": "0.9.1",
+    "scipy": "1.17.1"
+  },
+  "held_out": {
+    "accuracy": 0.625,
+    "prediction_shape": [
+      40
+    ],
+    "probability_shape": [
+      40,
+      2
+    ]
+  },
+  "schema_version": 1,
+  "simulator": {
+    "mode": "exact statevector",
+    "name": "Qiskit Machine Learning QMLSampler",
+    "seed": 42,
+    "shots": null
+  },
+  "trained_parameters": [
+    {
+      "name": "w[0]",
+      "value_radians": 1.8139123873113132
+    },
+    {
+      "name": "w[1]",
+      "value_radians": -0.04141345311166181
+    },
+    {
+      "name": "w[2]",
+      "value_radians": 2.8427630922912703
+    },
+    {
+      "name": "w[3]",
+      "value_radians": 0.8969731032291903
+    },
+    {
+      "name": "w[4]",
+      "value_radians": -1.941070389225988
+    },
+    {
+      "name": "w[5]",
+      "value_radians": 3.4846168321780517
+    },
+    {
+      "name": "w[6]",
+      "value_radians": 2.874102481074908
+    },
+    {
+      "name": "w[7]",
+      "value_radians": 2.9361719580120655
+    },
+    {
+      "name": "w[8]",
+      "value_radians": -1.29447624842255
+    },
+    {
+      "name": "w[9]",
+      "value_radians": -0.3117343460440681
+    },
+    {
+      "name": "w[10]",
+      "value_radians": -0.31179995579477204
+    },
+    {
+      "name": "w[11]",
+      "value_radians": 2.6814435075521947
+    },
+    {
+      "name": "w[12]",
+      "value_radians": 1.7234772110431942
+    },
+    {
+      "name": "w[13]",
+      "value_radians": 2.0279710262248587
+    },
+    {
+      "name": "w[14]",
+      "value_radians": 0.14446092547774683
+    },
+    {
+      "name": "w[15]",
+      "value_radians": -1.7138096556494131
+    }
+  ],
+  "training": {
+    "final_objective": 0.8894781515542306,
+    "initial_weights_radians": [
+      1.7213166190998062,
+      -0.3840380893017967,
+      2.2531371815723604,
+      1.2400999002927888,
+      -2.5498589250729733,
+      2.9884233715702675,
+      1.6407891386670415,
+      1.797395039824692,
+      -2.3366309591134007,
+      -0.3117343460440681,
+      -0.8117999558004185,
+      2.6814435075521947,
+      0.9039312087064583,
+      2.0279710262248587,
+      -0.35553907452309846,
+      -1.7138096556494131
+    ],
+    "maxiter": 25,
+    "optimizer": "COBYLA",
+    "optimizer_evaluations": 25,
+    "random_state": 42
+  }
+}

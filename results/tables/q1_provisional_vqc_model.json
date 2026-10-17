@@ -1,0 +1,321 @@
+{
+  "architecture": {
+    "architecture_sha256": "a90caedf11765bf2fd9a43b2372cc3f961e0ed15f291746926250e3d0bd30d1d",
+    "definition": {
+      "architecture_version": "q1-ry-ring-parity-2layer-v1",
+      "entanglement": "directed ring CX",
+      "entanglement_edges_per_layer": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "input_encoding": "RY angle encoding, feature i on logical qubit i",
+      "input_parameters": [
+        "x[0]",
+        "x[1]",
+        "x[2]",
+        "x[3]"
+      ],
+      "logical_operation_counts": {
+        "barrier": 1,
+        "cx": 8,
+        "measure": 4,
+        "ry": 12,
+        "rz": 8
+      },
+      "num_qubits": 4,
+      "parameter_count": 16,
+      "parameter_names": [
+        "w[0]",
+        "w[1]",
+        "w[2]",
+        "w[3]",
+        "w[4]",
+        "w[5]",
+        "w[6]",
+        "w[7]",
+        "w[8]",
+        "w[9]",
+        "w[10]",
+        "w[11]",
+        "w[12]",
+        "w[13]",
+        "w[14]",
+        "w[15]"
+      ],
+      "readout": "parity of four measured logical bits; label 1 is odd parity",
+      "rotations_per_qubit_per_layer": [
+        "RY",
+        "RZ"
+      ],
+      "trainable_layers": 2
+    }
+  },
+  "dataset_identity": {
+    "array_sha256": {
+      "X_test": "af1a0ff0e1f5a16a89e69b9f3139211cbf1f1c61944c2abd1158232d8cdd43da",
+      "X_train": "286b90a9c93a8a53262e01dd87f23b1a3cfcdb178a966abcbef9cf9bf2c17546",
+      "raw_X_test": "20bec58621e24e7aa4a8f1ac480c2d0e3142e2965b5c1e0d3674c82f4137944d",
+      "raw_X_train": "22eb19efbfaf54eb524b4b4b48c50a875d734a2b4434812e550421868a235671",
+      "y_test": "59797d91e4e20032c9aadf5286db5c97c6761ebfe0bf05a362af9aabf4fc4879",
+      "y_train": "4c1df3a950c547d274c7c4a7f7b1517b75b45bdf7962f26a743cfb51f5357f1e"
+    },
+    "dataset_sha256": "5e4bebee74b379c199394c99c7deb6ee5418843d0b6380b1f1ef75c7b2bf7b9e",
+    "definition": {
+      "feature_names": [
+        "feature_0",
+        "feature_1",
+        "feature_2",
+        "feature_3"
+      ],
+      "generation_parameters": {
+        "n_features": 4,
+        "n_informative": 3,
+        "n_redundant": 0,
+        "n_samples": 200,
+        "random_state": 42
+      },
+      "scikit_learn_version": "1.9.1",
+      "source": "make_classification_q1_provisional_n_redundant_0",
+      "split": {
+        "method": "stratified 80/20",
+        "random_state": 42,
+        "test_size": 0.2
+      }
+    },
+    "identity_version": 1,
+    "preprocessing": {
+      "clip": true,
+      "data_max": [
+        3.1762907430697145,
+        3.531827006207995,
+        4.598515378881905,
+        2.632382064837391
+      ],
+      "data_min": [
+        -3.3774522470036055,
+        -3.0091656985521182,
+        -2.6232015869643073,
+        -2.6968866429415717
+      ],
+      "feature_range": [
+        0.0,
+        3.141592653589793
+      ],
+      "min": [
+        1.6190105689387373,
+        1.4452810572814172,
+        1.1411456407758154,
+        1.5898089831091866
+      ],
+      "n_samples_seen": 160,
+      "scale": [
+        0.4793585373042904,
+        0.4802929456416523,
+        0.4350201854278394,
+        0.5894978890826261
+      ],
+      "type": "MinMaxScaler"
+    },
+    "preprocessing_sha256": "02f66eb586850ad7b7d336702a08ebb2d81bdf986164104af4f072f133b03b88",
+    "split_sha256": "df5acfa31566c35d4ea5b17c7723783d4fd06f127fd9f51462d8b54dc56708b5"
+  },
+  "environment": {
+    "numpy": "2.4.6",
+    "qiskit": "2.5.2",
+    "qiskit_aer": "0.17.2",
+    "qiskit_machine_learning": "0.9.1",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.17.1"
+  },
+  "schema_version": 2,
+  "trained_parameters": [
+    {
+      "name": "w[0]",
+      "value_radians": 1.2871468321895077
+    },
+    {
+      "name": "w[1]",
+      "value_radians": 0.10365882732097531
+    },
+    {
+      "name": "w[2]",
+      "value_radians": 3.0256589295152145
+    },
+    {
+      "name": "w[3]",
+      "value_radians": 1.2386892116759127
+    },
+    {
+      "name": "w[4]",
+      "value_radians": -1.9676886080191816
+    },
+    {
+      "name": "w[5]",
+      "value_radians": 2.9077493374378154
+    },
+    {
+      "name": "w[6]",
+      "value_radians": 2.4623966843196885
+    },
+    {
+      "name": "w[7]",
+      "value_radians": 2.7720751481710053
+    },
+    {
+      "name": "w[8]",
+      "value_radians": -1.6831429934249063
+    },
+    {
+      "name": "w[9]",
+      "value_radians": 0.028805972302554828
+    },
+    {
+      "name": "w[10]",
+      "value_radians": 0.02874036255926271
+    },
+    {
+      "name": "w[11]",
+      "value_radians": 2.6814435075521947
+    },
+    {
+      "name": "w[12]",
+      "value_radians": 1.5339870906785928
+    },
+    {
+      "name": "w[13]",
+      "value_radians": 2.0279710262248587
+    },
+    {
+      "name": "w[14]",
+      "value_radians": -0.35553907452413963
+    },
+    {
+      "name": "w[15]",
+      "value_radians": -1.7138096556494131
+    }
+  ],
+  "training": {
+    "convergence": [
+      {
+        "evaluation": 1,
+        "objective": 1.0906700255841202
+      },
+      {
+        "evaluation": 2,
+        "objective": 1.1575105381926516
+      },
+      {
+        "evaluation": 3,
+        "objective": 1.0894233997228164
+      },
+      {
+        "evaluation": 4,
+        "objective": 1.087771597164929
+      },
+      {
+        "evaluation": 5,
+        "objective": 1.0878668164104504
+      },
+      {
+        "evaluation": 6,
+        "objective": 1.083083985533765
+      },
+      {
+        "evaluation": 7,
+        "objective": 1.0902468639987486
+      },
+      {
+        "evaluation": 8,
+        "objective": 1.0605172314706535
+      },
+      {
+        "evaluation": 9,
+        "objective": 1.0591708514024223
+      },
+      {
+        "evaluation": 10,
+        "objective": 0.9951309505088559
+      },
+      {
+        "evaluation": 11,
+        "objective": 0.9951309505088559
+      },
+      {
+        "evaluation": 12,
+        "objective": 0.9951309505079745
+      },
+      {
+        "evaluation": 13,
+        "objective": 0.9951309505079745
+      },
+      {
+        "evaluation": 14,
+        "objective": 0.9863523846296932
+      },
+      {
+        "evaluation": 15,
+        "objective": 0.9863523846296932
+      },
+      {
+        "evaluation": 16,
+        "objective": 0.9863523846297635
+      },
+      {
+        "evaluation": 17,
+        "objective": 0.9863523846296932
+      },
+      {
+        "evaluation": 18,
+        "objective": 0.9850122626754164
+      },
+      {
+        "evaluation": 19,
+        "objective": 0.9962050313891468
+      },
+      {
+        "evaluation": 20,
+        "objective": 0.9853198986049196
+      },
+      {
+        "evaluation": 21,
+        "objective": 0.9724357746755278
+      },
+      {
+        "evaluation": 22,
+        "objective": 0.9681201626707487
+      },
+      {
+        "evaluation": 23,
+        "objective": 0.9783792234700325
+      },
+      {
+        "evaluation": 24,
+        "objective": 0.9646762183668726
+      },
+      {
+        "evaluation": 25,
+        "objective": 0.9696867052121118
+      }
+    ],
+    "final_objective": 0.9646762183668726,
+    "maxiter": 25,
+    "optimizer": "COBYLA",
+    "optimizer_evaluations": 25,
+    "random_state": 42,
+    "simulator": "QMLSampler exact statevector, shots=None"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "interpretation": "SWAP counts are observed at the SABRE routing stage. Final CX/depth overheads remain separately measured because later basis translation and optimization can decompose and cancel gates.",
+  "logical_input_swap_count": 0,
+  "processors": [
+    {
+      "compiler_settings": {
+        "basis_gates": [
+          "rz",
+          "sx",
+          "x",
+          "cx"
+        ],
+        "layout_method": "sabre",
+        "optimization_level": 1,
+        "routing_method": "sabre",
+        "seed_transpiler": 42
+      },
+      "final_native_basis_operation_counts": {
+        "barrier": 1,
+        "cx": 24,
+        "measure": 4,
+        "rz": 32,
+        "sx": 16
+      },
+      "method": "count explicit swap nodes in the DAG immediately after SabreLayout; logical input contains zero swap nodes",
+      "processor": "Processor A",
+      "qiskit_version": "2.5.2",
+      "trace_event": {
+        "operation_counts": {
+          "barrier": 2,
+          "cx": 8,
+          "measure": 4,
+          "ry": 12,
+          "rz": 8,
+          "swap": 6
+        },
+        "pass_index": 8,
+        "pass_name": "SabreLayout"
+      },
+      "verified_inserted_swap_count": 6
+    },
+    {
+      "compiler_settings": {
+        "basis_gates": [
+          "rz",
+          "sx",
+          "x",
+          "cx"
+        ],
+        "layout_method": "sabre",
+        "optimization_level": 1,
+        "routing_method": "sabre",
+        "seed_transpiler": 42
+      },
+      "final_native_basis_operation_counts": {
+        "barrier": 1,
+        "cx": 8,
+        "measure": 4,
+        "rz": 32,
+        "sx": 16
+      },
+      "method": "count explicit swap nodes in the DAG immediately after SabreLayout; logical input contains zero swap nodes",
+      "processor": "Processor B",
+      "qiskit_version": "2.5.2",
+      "trace_event": {
+        "operation_counts": {
+          "barrier": 2,
+          "cx": 8,
+          "measure": 4,
+          "ry": 12,
+          "rz": 8
+        },
+        "pass_index": 8,
+        "pass_name": "SabreLayout"
+      },
+      "verified_inserted_swap_count": 0
+    }
+  ],
+  "schema_version": 1,
+  "scope": "transpilation-only diagnostic; no training or simulation"
+}

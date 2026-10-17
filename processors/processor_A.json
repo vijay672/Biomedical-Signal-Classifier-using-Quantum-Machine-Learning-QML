@@ -1,0 +1,14 @@
+{
+  "name": "Processor A",
+  "num_qubits": 5,
+  "coupling_map_source": "custom",
+  "reference_url": null,
+  "topology": "bidirectional five-qubit line, illustrative simulation",
+  "design_rationale": "A sparse baseline line exposes routing of the four-qubit ring closing interaction while meeting the five-qubit budget.",
+  "coupling_edges": [
+    [0, 1], [1, 0],
+    [1, 2], [2, 1],
+    [2, 3], [3, 2],
+    [3, 4], [4, 3]
+  ]
+}

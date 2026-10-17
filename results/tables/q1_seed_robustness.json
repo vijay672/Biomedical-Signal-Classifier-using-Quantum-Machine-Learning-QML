@@ -1,0 +1,170 @@
+{
+  "controlled_settings": {
+    "basis_gates": [
+      "rz",
+      "sx",
+      "x",
+      "cx"
+    ],
+    "layout_method": "sabre",
+    "optimization_level": 1,
+    "routing_method": "sabre"
+  },
+  "logical_cx_count": 8,
+  "logical_qubits": 4,
+  "qiskit_version": "2.5.2",
+  "rows": [
+    {
+      "cx_count": 24,
+      "explicit_swap_count_after_sabre_layout": 6,
+      "full_measured_depth": 34,
+      "gate_only_depth": 33,
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          4,
+          1,
+          2,
+          3
+        ],
+        "logical_to_initial_physical": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "physical_qubit_count": 5
+      },
+      "processor": "Processor A",
+      "seed_transpiler": 7
+    },
+    {
+      "cx_count": 24,
+      "explicit_swap_count_after_sabre_layout": 6,
+      "full_measured_depth": 36,
+      "gate_only_depth": 35,
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "logical_to_initial_physical": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "physical_qubit_count": 5
+      },
+      "processor": "Processor A",
+      "seed_transpiler": 42
+    },
+    {
+      "cx_count": 24,
+      "explicit_swap_count_after_sabre_layout": 6,
+      "full_measured_depth": 34,
+      "gate_only_depth": 33,
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          1,
+          4,
+          3,
+          2
+        ],
+        "logical_to_initial_physical": [
+          2,
+          3,
+          4,
+          1
+        ],
+        "physical_qubit_count": 5
+      },
+      "processor": "Processor A",
+      "seed_transpiler": 99
+    },
+    {
+      "cx_count": 8,
+      "explicit_swap_count_after_sabre_layout": 0,
+      "full_measured_depth": 21,
+      "gate_only_depth": 20,
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          1,
+          0,
+          3,
+          4
+        ],
+        "logical_to_initial_physical": [
+          1,
+          0,
+          3,
+          4
+        ],
+        "physical_qubit_count": 9
+      },
+      "processor": "Processor B",
+      "seed_transpiler": 7
+    },
+    {
+      "cx_count": 8,
+      "explicit_swap_count_after_sabre_layout": 0,
+      "full_measured_depth": 21,
+      "gate_only_depth": 20,
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          8,
+          7,
+          4,
+          5
+        ],
+        "logical_to_initial_physical": [
+          8,
+          7,
+          4,
+          5
+        ],
+        "physical_qubit_count": 9
+      },
+      "processor": "Processor B",
+      "seed_transpiler": 42
+    },
+    {
+      "cx_count": 8,
+      "explicit_swap_count_after_sabre_layout": 0,
+      "full_measured_depth": 21,
+      "gate_only_depth": 20,
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          8,
+          5,
+          4,
+          7
+        ],
+        "logical_to_initial_physical": [
+          8,
+          5,
+          4,
+          7
+        ],
+        "physical_qubit_count": 9
+      },
+      "processor": "Processor B",
+      "seed_transpiler": 99
+    }
+  ],
+  "schema_version": 1,
+  "scope": "secondary deterministic transpilation-only robustness check; no training or Aer inference",
+  "seed_42_is_frozen_official_baseline": true,
+  "seeds": [
+    7,
+    42,
+    99
+  ]
+}

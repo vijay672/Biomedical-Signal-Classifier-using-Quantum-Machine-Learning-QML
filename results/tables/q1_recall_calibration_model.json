@@ -1,0 +1,453 @@
+{
+  "architecture": {
+    "architecture_sha256": "a90caedf11765bf2fd9a43b2372cc3f961e0ed15f291746926250e3d0bd30d1d",
+    "definition": {
+      "architecture_version": "q1-ry-ring-parity-2layer-v1",
+      "entanglement": "directed ring CX",
+      "entanglement_edges_per_layer": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "input_encoding": "RY angle encoding, feature i on logical qubit i",
+      "input_parameters": [
+        "x[0]",
+        "x[1]",
+        "x[2]",
+        "x[3]"
+      ],
+      "logical_operation_counts": {
+        "barrier": 1,
+        "cx": 8,
+        "measure": 4,
+        "ry": 12,
+        "rz": 8
+      },
+      "num_qubits": 4,
+      "parameter_count": 16,
+      "parameter_names": [
+        "w[0]",
+        "w[1]",
+        "w[2]",
+        "w[3]",
+        "w[4]",
+        "w[5]",
+        "w[6]",
+        "w[7]",
+        "w[8]",
+        "w[9]",
+        "w[10]",
+        "w[11]",
+        "w[12]",
+        "w[13]",
+        "w[14]",
+        "w[15]"
+      ],
+      "readout": "parity of four measured logical bits; label 1 is odd parity",
+      "rotations_per_qubit_per_layer": [
+        "RY",
+        "RZ"
+      ],
+      "trainable_layers": 2
+    }
+  },
+  "environment": {
+    "numpy": "2.4.6",
+    "qiskit": "2.5.2",
+    "qiskit_machine_learning": "0.9.1",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.17.1"
+  },
+  "experiment": "separate inner-fit VQC; official full-training model unchanged",
+  "fit_indices_in_outer_training": [
+    31,
+    72,
+    40,
+    143,
+    74,
+    20,
+    59,
+    61,
+    142,
+    114,
+    3,
+    69,
+    138,
+    86,
+    89,
+    82,
+    125,
+    0,
+    37,
+    50,
+    88,
+    122,
+    8,
+    11,
+    85,
+    9,
+    15,
+    17,
+    19,
+    84,
+    79,
+    35,
+    41,
+    21,
+    26,
+    150,
+    129,
+    96,
+    83,
+    132,
+    151,
+    28,
+    6,
+    57,
+    29,
+    18,
+    155,
+    135,
+    139,
+    123,
+    130,
+    55,
+    42,
+    4,
+    16,
+    76,
+    103,
+    25,
+    87,
+    137,
+    45,
+    62,
+    90,
+    75,
+    152,
+    24,
+    145,
+    48,
+    5,
+    148,
+    104,
+    54,
+    67,
+    153,
+    2,
+    102,
+    158,
+    34,
+    14,
+    91,
+    108,
+    141,
+    80,
+    32,
+    115,
+    124,
+    126,
+    52,
+    147,
+    1,
+    131,
+    133,
+    56,
+    100,
+    105,
+    107,
+    44,
+    157,
+    78,
+    149,
+    156,
+    53,
+    77,
+    7,
+    146,
+    95,
+    140,
+    106,
+    10,
+    23,
+    47,
+    111,
+    99,
+    116,
+    38,
+    117,
+    71,
+    63,
+    36,
+    43,
+    46,
+    144,
+    81,
+    66,
+    70,
+    159,
+    113,
+    101
+  ],
+  "fit_raw_array_sha256": "6fc0a6acb525bca5393fc61ef1f98580e033b4d38b7c681a92bec382321b135a",
+  "inner_scaler": {
+    "clip": true,
+    "data_max": [
+      3.1762907430697145,
+      3.531827006207995,
+      4.598515378881905,
+      2.632382064837391
+    ],
+    "data_min": [
+      -3.3774522470036055,
+      -3.0091656985521182,
+      -2.6232015869643073,
+      -2.650969808393012
+    ],
+    "feature_range": [
+      0.0,
+      3.141592653589793
+    ],
+    "min": [
+      1.6190105689387373,
+      1.4452810572814172,
+      1.1411456407758154,
+      1.5763226593203736
+    ],
+    "n_samples_seen": 128,
+    "scale": [
+      0.4793585373042904,
+      0.4802929456416523,
+      0.4350201854278394,
+      0.5946211285883798
+    ],
+    "type": "MinMaxScaler"
+  },
+  "outer_dataset_sha256": "5e4bebee74b379c199394c99c7deb6ee5418843d0b6380b1f1ef75c7b2bf7b9e",
+  "outer_test_raw_array_sha256": "5e46a420e55355ac27861affbbb9f01dfaf177b96c9298b1d2980e3db92aea2e",
+  "schema_version": 1,
+  "trained_parameters": [
+    {
+      "name": "w[0]",
+      "value_radians": 1.2820360592418847
+    },
+    {
+      "name": "w[1]",
+      "value_radians": 0.09503679952737837
+    },
+    {
+      "name": "w[2]",
+      "value_radians": 3.0326222690478475
+    },
+    {
+      "name": "w[3]",
+      "value_radians": 1.1979051538273315
+    },
+    {
+      "name": "w[4]",
+      "value_radians": -1.6318691642586638
+    },
+    {
+      "name": "w[5]",
+      "value_radians": 2.593854148264265
+    },
+    {
+      "name": "w[6]",
+      "value_radians": 2.771157471114126
+    },
+    {
+      "name": "w[7]",
+      "value_radians": 2.687246201916986
+    },
+    {
+      "name": "w[8]",
+      "value_radians": -1.8030804219980527
+    },
+    {
+      "name": "w[9]",
+      "value_radians": -0.3117343460440681
+    },
+    {
+      "name": "w[10]",
+      "value_radians": -0.8117999558191604
+    },
+    {
+      "name": "w[11]",
+      "value_radians": 2.6814435075521947
+    },
+    {
+      "name": "w[12]",
+      "value_radians": 1.5385804936965437
+    },
+    {
+      "name": "w[13]",
+      "value_radians": 2.0279710262248587
+    },
+    {
+      "name": "w[14]",
+      "value_radians": 0.14446092548495795
+    },
+    {
+      "name": "w[15]",
+      "value_radians": -1.7138096556494131
+    }
+  ],
+  "training": {
+    "convergence": [
+      {
+        "evaluation": 1,
+        "objective": 1.0824591302878912
+      },
+      {
+        "evaluation": 2,
+        "objective": 1.1522099728941446
+      },
+      {
+        "evaluation": 3,
+        "objective": 1.079197643159869
+      },
+      {
+        "evaluation": 4,
+        "objective": 1.0774460881710255
+      },
+      {
+        "evaluation": 5,
+        "objective": 1.0786214041611628
+      },
+      {
+        "evaluation": 6,
+        "objective": 1.0724956865034416
+      },
+      {
+        "evaluation": 7,
+        "objective": 1.075799108392731
+      },
+      {
+        "evaluation": 8,
+        "objective": 1.057402411238507
+      },
+      {
+        "evaluation": 9,
+        "objective": 1.054646330862398
+      },
+      {
+        "evaluation": 10,
+        "objective": 0.9921226297238652
+      },
+      {
+        "evaluation": 11,
+        "objective": 0.9921226297238652
+      },
+      {
+        "evaluation": 12,
+        "objective": 0.992122629724936
+      },
+      {
+        "evaluation": 13,
+        "objective": 0.9921226297238652
+      },
+      {
+        "evaluation": 14,
+        "objective": 0.9844295333785167
+      },
+      {
+        "evaluation": 15,
+        "objective": 0.9844295333785167
+      },
+      {
+        "evaluation": 16,
+        "objective": 0.9844295333780564
+      },
+      {
+        "evaluation": 17,
+        "objective": 0.9844295333780564
+      },
+      {
+        "evaluation": 18,
+        "objective": 0.9840384963008091
+      },
+      {
+        "evaluation": 19,
+        "objective": 0.9924600416401207
+      },
+      {
+        "evaluation": 20,
+        "objective": 0.9840987232579712
+      },
+      {
+        "evaluation": 21,
+        "objective": 0.9728290309838787
+      },
+      {
+        "evaluation": 22,
+        "objective": 0.9617007341072745
+      },
+      {
+        "evaluation": 23,
+        "objective": 0.9613615530626634
+      },
+      {
+        "evaluation": 24,
+        "objective": 0.9669659736327796
+      },
+      {
+        "evaluation": 25,
+        "objective": 0.9605885331064556
+      }
+    ],
+    "elapsed_seconds_observed": 1.8000187079887837,
+    "final_objective": 0.9605885331064556,
+    "maxiter": 25,
+    "optimizer": "COBYLA",
+    "optimizer_evaluations": 25,
+    "random_state": 42
+  },
+  "validation_indices_in_outer_training": [
+    127,
+    97,
+    64,
+    13,
+    58,
+    39,
+    92,
+    68,
+    154,
+    109,
+    118,
+    110,
+    94,
+    30,
+    51,
+    22,
+    98,
+    33,
+    112,
+    65,
+    27,
+    121,
+    60,
+    134,
+    12,
+    49,
+    120,
+    73,
+    119,
+    136,
+    128,
+    93
+  ],
+  "validation_raw_array_sha256": "8c0600c403e44abf550c2a49694ea2bd457e7da10155d33cc7a8b9565affd9d4"
+}

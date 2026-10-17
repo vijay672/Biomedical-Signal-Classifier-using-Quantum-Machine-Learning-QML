@@ -1,0 +1,837 @@
+{
+  "baseline_artifact_sha256_unchanged": {
+    "logistic_regression_results": "f0b0b192a1e0a3e34bb4c7bd00a55a79249cbca286eaae7924daa5cb8ab38895",
+    "original_vqc_parameters": "cf214628f7137e6760973b60a7d48c222d337f1eac2acdeff03902c6fb79644b"
+  },
+  "candidates": [
+    {
+      "compilation": {
+        "processors": {
+          "Processor A": {
+            "coupling_map_source": "custom",
+            "cx_count": 24,
+            "depth": 36,
+            "routing_overhead_cx": 16,
+            "routing_overhead_depth": 15
+          },
+          "Processor B": {
+            "coupling_map_source": "custom",
+            "cx_count": 8,
+            "depth": 21,
+            "routing_overhead_cx": 0,
+            "routing_overhead_depth": 0
+          }
+        },
+        "raw": {
+          "cx_count": 8,
+          "depth": 14
+        },
+        "unconstrained": {
+          "cx_count": 8,
+          "depth": 21
+        }
+      },
+      "config": {
+        "entanglement": "ring",
+        "maxiter": 25,
+        "random_state": 42,
+        "readout": "parity",
+        "shots": null
+      },
+      "training": {
+        "final_objective": 0.8939658354517611,
+        "fit_samples": 128,
+        "optimizer_evaluations": 25,
+        "trained_parameters": [
+          {
+            "name": "w[0]",
+            "value_radians": 1.3330069751156957
+          },
+          {
+            "name": "w[1]",
+            "value_radians": 0.4992273516194718
+          },
+          {
+            "name": "w[2]",
+            "value_radians": 3.008033480340827
+          },
+          {
+            "name": "w[3]",
+            "value_radians": 0.759498146257873
+          },
+          {
+            "name": "w[4]",
+            "value_radians": -1.627782311880532
+          },
+          {
+            "name": "w[5]",
+            "value_radians": 3.4725628493438268
+          },
+          {
+            "name": "w[6]",
+            "value_radians": 1.8540720544086844
+          },
+          {
+            "name": "w[7]",
+            "value_radians": 2.9914413312540216
+          },
+          {
+            "name": "w[8]",
+            "value_radians": -1.5910559371434643
+          },
+          {
+            "name": "w[9]",
+            "value_radians": -0.3117343460440681
+          },
+          {
+            "name": "w[10]",
+            "value_radians": -0.31179995579517455
+          },
+          {
+            "name": "w[11]",
+            "value_radians": 2.6814435075521947
+          },
+          {
+            "name": "w[12]",
+            "value_radians": 1.5199148272917193
+          },
+          {
+            "name": "w[13]",
+            "value_radians": 2.0279710262248587
+          },
+          {
+            "name": "w[14]",
+            "value_radians": 0.1444609254801097
+          },
+          {
+            "name": "w[15]",
+            "value_radians": -1.7138096556494131
+          }
+        ]
+      },
+      "validation": {
+        "confusion_matrix": [
+          [
+            13,
+            3
+          ],
+          [
+            2,
+            14
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "f1_label_1": 0.8484848484848485,
+        "precision_label_1": 0.8235294117647058,
+        "predictions": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "recall_label_1": 0.875,
+        "sample_count": 32
+      },
+      "variant": {
+        "entanglement": "ring",
+        "name": "original_ring_parity",
+        "rationale": "Original architecture, retrained on the inner training rows for a fair comparison.",
+        "readout": "parity"
+      }
+    },
+    {
+      "compilation": {
+        "processors": {
+          "Processor A": {
+            "coupling_map_source": "custom",
+            "cx_count": 6,
+            "depth": 18,
+            "routing_overhead_cx": 0,
+            "routing_overhead_depth": 0
+          },
+          "Processor B": {
+            "coupling_map_source": "custom",
+            "cx_count": 6,
+            "depth": 18,
+            "routing_overhead_cx": 0,
+            "routing_overhead_depth": 0
+          }
+        },
+        "raw": {
+          "cx_count": 6,
+          "depth": 11
+        },
+        "unconstrained": {
+          "cx_count": 6,
+          "depth": 18
+        }
+      },
+      "config": {
+        "entanglement": "line",
+        "maxiter": 25,
+        "random_state": 42,
+        "readout": "parity",
+        "shots": null
+      },
+      "training": {
+        "final_objective": 0.973933494336801,
+        "fit_samples": 128,
+        "optimizer_evaluations": 25,
+        "trained_parameters": [
+          {
+            "name": "w[0]",
+            "value_radians": 1.4594041976321581
+          },
+          {
+            "name": "w[1]",
+            "value_radians": 0.11596191070435288
+          },
+          {
+            "name": "w[2]",
+            "value_radians": 3.016421723475504
+          },
+          {
+            "name": "w[3]",
+            "value_radians": 1.2355462604162983
+          },
+          {
+            "name": "w[4]",
+            "value_radians": -1.903650465304567
+          },
+          {
+            "name": "w[5]",
+            "value_radians": 2.891648431511053
+          },
+          {
+            "name": "w[6]",
+            "value_radians": 1.5715348325340484
+          },
+          {
+            "name": "w[7]",
+            "value_radians": 1.7839246891919451
+          },
+          {
+            "name": "w[8]",
+            "value_radians": -1.837724577445943
+          },
+          {
+            "name": "w[9]",
+            "value_radians": -0.3104954094502023
+          },
+          {
+            "name": "w[10]",
+            "value_radians": -1.7798061953275788
+          },
+          {
+            "name": "w[11]",
+            "value_radians": 2.6826824441460606
+          },
+          {
+            "name": "w[12]",
+            "value_radians": 0.9051701452992414
+          },
+          {
+            "name": "w[13]",
+            "value_radians": 2.0292099628187246
+          },
+          {
+            "name": "w[14]",
+            "value_radians": -0.46985432397486865
+          },
+          {
+            "name": "w[15]",
+            "value_radians": -1.7125707190555475
+          }
+        ]
+      },
+      "validation": {
+        "confusion_matrix": [
+          [
+            11,
+            5
+          ],
+          [
+            11,
+            5
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "f1_label_1": 0.38461538461538464,
+        "precision_label_1": 0.5,
+        "predictions": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "recall_label_1": 0.3125,
+        "sample_count": 32
+      },
+      "variant": {
+        "entanglement": "line",
+        "name": "line_parity",
+        "rationale": "Remove the ring-closing CX in each layer to reduce line-topology routing.",
+        "readout": "parity"
+      }
+    },
+    {
+      "compilation": {
+        "processors": {
+          "Processor A": {
+            "coupling_map_source": "custom",
+            "cx_count": 24,
+            "depth": 36,
+            "routing_overhead_cx": 16,
+            "routing_overhead_depth": 15
+          },
+          "Processor B": {
+            "coupling_map_source": "custom",
+            "cx_count": 8,
+            "depth": 21,
+            "routing_overhead_cx": 0,
+            "routing_overhead_depth": 0
+          }
+        },
+        "raw": {
+          "cx_count": 8,
+          "depth": 14
+        },
+        "unconstrained": {
+          "cx_count": 8,
+          "depth": 21
+        }
+      },
+      "config": {
+        "entanglement": "ring",
+        "maxiter": 25,
+        "random_state": 42,
+        "readout": "first_qubit",
+        "shots": null
+      },
+      "training": {
+        "final_objective": 0.6198902591485288,
+        "fit_samples": 128,
+        "optimizer_evaluations": 25,
+        "trained_parameters": [
+          {
+            "name": "w[0]",
+            "value_radians": 1.6746054001231143
+          },
+          {
+            "name": "w[1]",
+            "value_radians": -0.14844331900130536
+          },
+          {
+            "name": "w[2]",
+            "value_radians": 2.70856084941348
+          },
+          {
+            "name": "w[3]",
+            "value_radians": 1.909943789760895
+          },
+          {
+            "name": "w[4]",
+            "value_radians": -2.5376925770513004
+          },
+          {
+            "name": "w[5]",
+            "value_radians": 3.412487755421254
+          },
+          {
+            "name": "w[6]",
+            "value_radians": 1.6125432461895766
+          },
+          {
+            "name": "w[7]",
+            "value_radians": 1.9793176406438484
+          },
+          {
+            "name": "w[8]",
+            "value_radians": -1.4965396455036573
+          },
+          {
+            "name": "w[9]",
+            "value_radians": -0.3117343460440681
+          },
+          {
+            "name": "w[10]",
+            "value_radians": -1.0029893347215264
+          },
+          {
+            "name": "w[11]",
+            "value_radians": 2.6814435075521947
+          },
+          {
+            "name": "w[12]",
+            "value_radians": 1.646346994993106
+          },
+          {
+            "name": "w[13]",
+            "value_radians": 2.0279710262248587
+          },
+          {
+            "name": "w[14]",
+            "value_radians": 1.1638019434377616
+          },
+          {
+            "name": "w[15]",
+            "value_radians": -1.6600908209206537
+          }
+        ]
+      },
+      "validation": {
+        "confusion_matrix": [
+          [
+            9,
+            7
+          ],
+          [
+            1,
+            15
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "f1_label_1": 0.7894736842105263,
+        "precision_label_1": 0.6818181818181818,
+        "predictions": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "recall_label_1": 0.9375,
+        "sample_count": 32
+      },
+      "variant": {
+        "entanglement": "ring",
+        "name": "ring_first_qubit",
+        "rationale": "Keep the ansatz and test whether a local readout improves positive-class recall.",
+        "readout": "first_qubit"
+      }
+    }
+  ],
+  "environment": {
+    "qiskit": "2.5.2",
+    "qiskit_machine_learning": "0.9.1",
+    "scikit_learn": "1.9.1"
+  },
+  "final_refit_and_held_out": {
+    "fit_samples": 160,
+    "metrics": {
+      "confusion_matrix": [
+        [
+          19,
+          1
+        ],
+        [
+          12,
+          8
+        ]
+      ],
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "f1_label_1": 0.5517241379310345,
+      "precision_label_1": 0.8888888888888888,
+      "predictions": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "recall_label_1": 0.4,
+      "sample_count": 40
+    },
+    "optimizer_evaluations": 25
+  },
+  "problem": "binary classification of the Q1 four-feature synthetic benchmark",
+  "protocol": {
+    "basis_gates": [
+      "rz",
+      "sx",
+      "x",
+      "cx"
+    ],
+    "candidate_count": 3,
+    "fit_indices_within_outer_training": [
+      31,
+      72,
+      40,
+      143,
+      74,
+      20,
+      59,
+      61,
+      142,
+      114,
+      3,
+      69,
+      138,
+      86,
+      89,
+      82,
+      125,
+      0,
+      37,
+      50,
+      88,
+      122,
+      8,
+      11,
+      85,
+      9,
+      15,
+      17,
+      19,
+      84,
+      79,
+      35,
+      41,
+      21,
+      26,
+      150,
+      129,
+      96,
+      83,
+      132,
+      151,
+      28,
+      6,
+      57,
+      29,
+      18,
+      155,
+      135,
+      139,
+      123,
+      130,
+      55,
+      42,
+      4,
+      16,
+      76,
+      103,
+      25,
+      87,
+      137,
+      45,
+      62,
+      90,
+      75,
+      152,
+      24,
+      145,
+      48,
+      5,
+      148,
+      104,
+      54,
+      67,
+      153,
+      2,
+      102,
+      158,
+      34,
+      14,
+      91,
+      108,
+      141,
+      80,
+      32,
+      115,
+      124,
+      126,
+      52,
+      147,
+      1,
+      131,
+      133,
+      56,
+      100,
+      105,
+      107,
+      44,
+      157,
+      78,
+      149,
+      156,
+      53,
+      77,
+      7,
+      146,
+      95,
+      140,
+      106,
+      10,
+      23,
+      47,
+      111,
+      99,
+      116,
+      38,
+      117,
+      71,
+      63,
+      36,
+      43,
+      46,
+      144,
+      81,
+      66,
+      70,
+      159,
+      113,
+      101
+    ],
+    "held_out_test_samples": 40,
+    "held_out_use": "evaluated once after selection and full outer-training refit",
+    "inner_fit_samples": 128,
+    "inner_scaler_data_max": [
+      2.4636097706452373,
+      2.7937380177273905,
+      1.076568161941738,
+      1.5842308565561685
+    ],
+    "inner_scaler_data_min": [
+      -3.365582304231961,
+      -3.0856610429868305,
+      -1.1573985629599386,
+      -1.3933147342810155
+    ],
+    "inner_validation_fraction": 0.2,
+    "inner_validation_samples": 32,
+    "inner_validation_seed": 43,
+    "model_seed": 42,
+    "optimizer": "COBYLA",
+    "optimizer_maxiter_per_fit": 25,
+    "outer_training_samples": 160,
+    "preprocessing": "MinMaxScaler fitted only on inner fit rows, then applied to validation",
+    "routing_overhead_definition": "CX/depth delta from unconstrained compile",
+    "selection_rule": "maximize validation label-1 recall; break ties by precision, F1, lower sum of A/B routing CX deltas, then listed candidate order",
+    "simulator": "QMLSampler exact statevector, shots=None",
+    "transpiler_optimization_level": 1,
+    "transpiler_seed": 42,
+    "validation_indices_within_outer_training": [
+      127,
+      97,
+      64,
+      13,
+      58,
+      39,
+      92,
+      68,
+      154,
+      109,
+      118,
+      110,
+      94,
+      30,
+      51,
+      22,
+      98,
+      33,
+      112,
+      65,
+      27,
+      121,
+      60,
+      134,
+      12,
+      49,
+      120,
+      73,
+      119,
+      136,
+      128,
+      93
+    ]
+  },
+  "schema_version": 1,
+  "selected_parameter_file": "results/notebook_vqc_selected_parameters.json",
+  "selected_parameter_file_sha256": "7772a9f2ee4c711f8b3d5e6556af29a1a497660959db22379112b45558f02f86",
+  "selected_validation": {
+    "confusion_matrix": [
+      [
+        9,
+        7
+      ],
+      [
+        1,
+        15
+      ]
+    ],
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "f1_label_1": 0.7894736842105263,
+    "precision_label_1": 0.6818181818181818,
+    "predictions": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "recall_label_1": 0.9375,
+    "sample_count": 32
+  },
+  "selected_variant_name": "ring_first_qubit"
+}

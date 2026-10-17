@@ -1,0 +1,160 @@
+{
+  "architecture": {
+    "entanglement": "ring",
+    "num_qubits": 4,
+    "readout": "first_qubit"
+  },
+  "dataset": {
+    "generation_random_state": 42,
+    "outer_split_random_state": 42,
+    "outer_test_samples": 40,
+    "outer_training_samples": 160,
+    "preprocessing": "outer training fitted MinMaxScaler to [0, pi]",
+    "source": "make_classification"
+  },
+  "held_out_metrics_after_selection": {
+    "confusion_matrix": [
+      [
+        19,
+        1
+      ],
+      [
+        12,
+        8
+      ]
+    ],
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "f1_label_1": 0.5517241379310345,
+    "precision_label_1": 0.8888888888888888,
+    "predictions": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "recall_label_1": 0.4,
+    "sample_count": 40
+  },
+  "schema_version": 1,
+  "selected_variant": {
+    "entanglement": "ring",
+    "name": "ring_first_qubit",
+    "rationale": "Keep the ansatz and test whether a local readout improves positive-class recall.",
+    "readout": "first_qubit"
+  },
+  "selection_basis": "inner validation only",
+  "trained_parameters": [
+    {
+      "name": "w[0]",
+      "value_radians": 1.9659714534041193
+    },
+    {
+      "name": "w[1]",
+      "value_radians": 0.08047717959651801
+    },
+    {
+      "name": "w[2]",
+      "value_radians": 2.7162341130676153
+    },
+    {
+      "name": "w[3]",
+      "value_radians": 1.8326396793566402
+    },
+    {
+      "name": "w[4]",
+      "value_radians": -2.562460623753963
+    },
+    {
+      "name": "w[5]",
+      "value_radians": 3.5193789966593547
+    },
+    {
+      "name": "w[6]",
+      "value_radians": 1.269662019678678
+    },
+    {
+      "name": "w[7]",
+      "value_radians": 2.5155740450004784
+    },
+    {
+      "name": "w[8]",
+      "value_radians": -2.549825975538046
+    },
+    {
+      "name": "w[9]",
+      "value_radians": -0.5249293624628687
+    },
+    {
+      "name": "w[10]",
+      "value_radians": -0.1215202848733295
+    },
+    {
+      "name": "w[11]",
+      "value_radians": 2.6814435075521947
+    },
+    {
+      "name": "w[12]",
+      "value_radians": 2.1432774884116093
+    },
+    {
+      "name": "w[13]",
+      "value_radians": 2.0279710262248587
+    },
+    {
+      "name": "w[14]",
+      "value_radians": 0.3099651290244232
+    },
+    {
+      "name": "w[15]",
+      "value_radians": -1.7138096556494131
+    }
+  ],
+  "training": {
+    "final_objective": 0.9115754578231858,
+    "fit_samples": 160,
+    "maxiter": 25,
+    "optimizer": "COBYLA",
+    "optimizer_evaluations": 25,
+    "random_state": 42,
+    "simulator": "QMLSampler exact statevector"
+  }
+}

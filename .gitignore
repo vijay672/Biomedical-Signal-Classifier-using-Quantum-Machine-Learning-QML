@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local data and generated outputs
+data/*
+!data/.gitkeep
+!data/raw/
+!data/processed/
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+results/*
+!results/.gitkeep
+!results/tables/
+!results/figures/
+results/tables/*
+!results/tables/q1_provisional_*.json
+!results/tables/q1_provisional_*_circuit.txt
+!results/tables/q1_judge_audit.json
+!results/tables/q1_layout_ablation.json
+!results/tables/q1_statistical_review.json
+!results/tables/q1_seed_robustness.json
+!results/tables/q1_recall_calibration.json
+!results/tables/q1_recall_calibration_model.json
+!results/tables/historical/
+results/tables/historical/*
+!results/tables/historical/*.json
+!results/tables/historical/*.md
+!results/tables/historical/*.ipynb
+results/figures/*
+!results/figures/*.svg
+!results/figures/historical/
+results/figures/historical/*
+!results/figures/historical/*.svg
+
+# Editors and OS files
+.DS_Store
+.idea/
+.vscode/

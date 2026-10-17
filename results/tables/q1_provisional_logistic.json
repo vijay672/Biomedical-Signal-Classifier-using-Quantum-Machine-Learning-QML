@@ -1,0 +1,144 @@
+{
+  "dataset_identity": {
+    "array_sha256": {
+      "X_test": "af1a0ff0e1f5a16a89e69b9f3139211cbf1f1c61944c2abd1158232d8cdd43da",
+      "X_train": "286b90a9c93a8a53262e01dd87f23b1a3cfcdb178a966abcbef9cf9bf2c17546",
+      "raw_X_test": "20bec58621e24e7aa4a8f1ac480c2d0e3142e2965b5c1e0d3674c82f4137944d",
+      "raw_X_train": "22eb19efbfaf54eb524b4b4b48c50a875d734a2b4434812e550421868a235671",
+      "y_test": "59797d91e4e20032c9aadf5286db5c97c6761ebfe0bf05a362af9aabf4fc4879",
+      "y_train": "4c1df3a950c547d274c7c4a7f7b1517b75b45bdf7962f26a743cfb51f5357f1e"
+    },
+    "dataset_sha256": "5e4bebee74b379c199394c99c7deb6ee5418843d0b6380b1f1ef75c7b2bf7b9e",
+    "definition": {
+      "feature_names": [
+        "feature_0",
+        "feature_1",
+        "feature_2",
+        "feature_3"
+      ],
+      "generation_parameters": {
+        "n_features": 4,
+        "n_informative": 3,
+        "n_redundant": 0,
+        "n_samples": 200,
+        "random_state": 42
+      },
+      "scikit_learn_version": "1.9.1",
+      "source": "make_classification_q1_provisional_n_redundant_0",
+      "split": {
+        "method": "stratified 80/20",
+        "random_state": 42,
+        "test_size": 0.2
+      }
+    },
+    "identity_version": 1,
+    "preprocessing": {
+      "clip": true,
+      "data_max": [
+        3.1762907430697145,
+        3.531827006207995,
+        4.598515378881905,
+        2.632382064837391
+      ],
+      "data_min": [
+        -3.3774522470036055,
+        -3.0091656985521182,
+        -2.6232015869643073,
+        -2.6968866429415717
+      ],
+      "feature_range": [
+        0.0,
+        3.141592653589793
+      ],
+      "min": [
+        1.6190105689387373,
+        1.4452810572814172,
+        1.1411456407758154,
+        1.5898089831091866
+      ],
+      "n_samples_seen": 160,
+      "scale": [
+        0.4793585373042904,
+        0.4802929456416523,
+        0.4350201854278394,
+        0.5894978890826261
+      ],
+      "type": "MinMaxScaler"
+    },
+    "preprocessing_sha256": "02f66eb586850ad7b7d336702a08ebb2d81bdf986164104af4f072f133b03b88",
+    "split_sha256": "df5acfa31566c35d4ea5b17c7723783d4fd06f127fd9f51462d8b54dc56708b5"
+  },
+  "environment": {
+    "numpy": "2.4.6",
+    "scikit_learn": "1.9.1"
+  },
+  "metrics": {
+    "accuracy": 0.875,
+    "confusion_matrix": [
+      [
+        18,
+        2
+      ],
+      [
+        3,
+        17
+      ]
+    ],
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "f1_label_1": 0.8717948717948718,
+    "precision_label_1": 0.8947368421052632,
+    "predictions": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "recall_label_1": 0.85,
+    "sample_count": 40
+  },
+  "model": {
+    "max_iter": 1000,
+    "name": "LogisticRegression",
+    "random_state": 42
+  },
+  "schema_version": 2
+}

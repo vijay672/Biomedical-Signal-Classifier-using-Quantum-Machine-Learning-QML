@@ -1,0 +1,228 @@
+{
+  "controlled_change": "initial layout_method sabre versus trivial; routing_method remains sabre",
+  "logical_circuit": {
+    "cx_count": 8,
+    "num_qubits": 4
+  },
+  "model_architecture": "same fixed four-qubit ring/parity logical circuit for every row",
+  "qiskit_version": "2.5.2",
+  "rows": [
+    {
+      "compiler_settings": {
+        "basis_gates": [
+          "rz",
+          "sx",
+          "x",
+          "cx"
+        ],
+        "layout_method": "sabre",
+        "optimization_level": 1,
+        "routing_method": "sabre",
+        "seed_transpiler": 42
+      },
+      "cost": {
+        "cx_count": 24,
+        "explicit_swap_ops_after_transpile": 0,
+        "full_measured_depth": 36,
+        "gate_only_depth": 35,
+        "verified_inserted_swap_count": null
+      },
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "logical_to_initial_physical": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "physical_qubit_count": 5
+      },
+      "layout_method": "sabre",
+      "logical_qubit_count": 4,
+      "logical_qubit_utilization_of_budget": 0.8,
+      "physical_qubit_budget": 5,
+      "processor": "Processor A",
+      "routing_method": "sabre",
+      "routing_overhead": {
+        "cx_delta": 16,
+        "gate_only_depth_delta": 15
+      },
+      "swap_trace_event": {
+        "explicit_swap_count": 6,
+        "pass_index": 8,
+        "pass_name": "SabreLayout"
+      }
+    },
+    {
+      "compiler_settings": {
+        "basis_gates": [
+          "rz",
+          "sx",
+          "x",
+          "cx"
+        ],
+        "layout_method": "trivial",
+        "optimization_level": 1,
+        "routing_method": "sabre",
+        "seed_transpiler": 42
+      },
+      "cost": {
+        "cx_count": 22,
+        "explicit_swap_ops_after_transpile": 0,
+        "full_measured_depth": 35,
+        "gate_only_depth": 34,
+        "verified_inserted_swap_count": null
+      },
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "logical_to_initial_physical": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "physical_qubit_count": 5
+      },
+      "layout_method": "trivial",
+      "logical_qubit_count": 4,
+      "logical_qubit_utilization_of_budget": 0.8,
+      "physical_qubit_budget": 5,
+      "processor": "Processor A",
+      "routing_method": "sabre",
+      "routing_overhead": {
+        "cx_delta": 14,
+        "gate_only_depth_delta": 14
+      },
+      "swap_trace_event": {
+        "explicit_swap_count": 6,
+        "pass_index": 13,
+        "pass_name": "SabreSwap"
+      }
+    },
+    {
+      "compiler_settings": {
+        "basis_gates": [
+          "rz",
+          "sx",
+          "x",
+          "cx"
+        ],
+        "layout_method": "sabre",
+        "optimization_level": 1,
+        "routing_method": "sabre",
+        "seed_transpiler": 42
+      },
+      "cost": {
+        "cx_count": 8,
+        "explicit_swap_ops_after_transpile": 0,
+        "full_measured_depth": 21,
+        "gate_only_depth": 20,
+        "verified_inserted_swap_count": null
+      },
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          8,
+          7,
+          4,
+          5
+        ],
+        "logical_to_initial_physical": [
+          8,
+          7,
+          4,
+          5
+        ],
+        "physical_qubit_count": 9
+      },
+      "layout_method": "sabre",
+      "logical_qubit_count": 4,
+      "logical_qubit_utilization_of_budget": 0.4444444444444444,
+      "physical_qubit_budget": 9,
+      "processor": "Processor B",
+      "routing_method": "sabre",
+      "routing_overhead": {
+        "cx_delta": 0,
+        "gate_only_depth_delta": 0
+      },
+      "swap_trace_event": {
+        "explicit_swap_count": 0,
+        "pass_index": 8,
+        "pass_name": "SabreLayout"
+      }
+    },
+    {
+      "compiler_settings": {
+        "basis_gates": [
+          "rz",
+          "sx",
+          "x",
+          "cx"
+        ],
+        "layout_method": "trivial",
+        "optimization_level": 1,
+        "routing_method": "sabre",
+        "seed_transpiler": 42
+      },
+      "cost": {
+        "cx_count": 14,
+        "explicit_swap_ops_after_transpile": 0,
+        "full_measured_depth": 27,
+        "gate_only_depth": 26,
+        "verified_inserted_swap_count": null
+      },
+      "layout": {
+        "logical_qubit_count": 4,
+        "logical_to_final_physical": [
+          0,
+          1,
+          4,
+          3
+        ],
+        "logical_to_initial_physical": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "physical_qubit_count": 9
+      },
+      "layout_method": "trivial",
+      "logical_qubit_count": 4,
+      "logical_qubit_utilization_of_budget": 0.4444444444444444,
+      "physical_qubit_budget": 9,
+      "processor": "Processor B",
+      "routing_method": "sabre",
+      "routing_overhead": {
+        "cx_delta": 6,
+        "gate_only_depth_delta": 6
+      },
+      "swap_trace_event": {
+        "explicit_swap_count": 2,
+        "pass_index": 13,
+        "pass_name": "SabreSwap"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "scope": "deterministic transpilation only; no training or simulation",
+  "unconstrained_reference_cost": {
+    "cx_count": 8,
+    "explicit_swap_ops_after_transpile": 0,
+    "full_measured_depth": 21,
+    "gate_only_depth": 20,
+    "verified_inserted_swap_count": null
+  }
+}

@@ -1,0 +1,3 @@
+# Generated visual and circuit artifacts preserve their exact source bytes.
+results/figures/** -whitespace
+results/tables/*_circuit.txt -whitespace
