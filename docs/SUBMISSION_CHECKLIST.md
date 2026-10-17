@@ -1,4 +1,4 @@
-# QFF 2026 Phase 1 submission checklist — 2026-10-14
+# QFF 2026 Phase 1 submission checklist — updated 2026-10-17
 
 ## Verified package
 
@@ -13,7 +13,7 @@
 - [x] `.gitignore` allowlists final JSON, text circuits, notebook and SVG evidence while excluding local raw data, caches and temporary root results. `git add --all` in the initialized repository includes the complete package and excludes `.venv`, Python caches, generated local datasets, and legacy root outputs. No secret-pattern matches or files over 5 MB were found. Organizer source PDFs total about 3.1 MB and are included as relevant documentation; the executed notebook is 1,537,101 bytes.
 - [x] The prior 23/23 suite passed at remediation; the final independent-review suite is **35/35 passed**. `src.q1_submission.smoke_test()` passed. Current `.venv/bin/python -m pip check`: **passed**. Fresh isolated Python 3.11 environment installation of `requirements.txt`, `pip check` and imports was checked during remediation. Saved-artifact identity, history hashes, figure files and report-value checks passed.
 - [x] README's documented CLI target `python -m src.q1_submission` now loads and validates complete saved outputs in a fresh process without retraining or resimulation; it trains only if the manifest is absent. Notebook execution loaded and verified the outputs without retraining. Exact reproducibility across a second official training run was not tested, to avoid unnecessary retraining.
-- [x] Final packaging validation: all Master Guide p.3 mandatory paths exist; final JSON parses; notebook schema validates; Git inclusion review covers the final manifest/benchmark/figures; `.venv`, caches and temporary outputs are ignored; no remote is configured.
+- [x] Final packaging validation: all Master Guide p.3 mandatory paths exist; final JSON parses; notebook schema validates; Git inclusion review covers the final manifest/benchmark/figures; `.venv`, caches and temporary outputs are ignored. At the initial review no remote was configured; `origin` was added during publication below.
 - [x] Final organizer discrepancy check: Master Guide precedence confirms A=5, B=9 and participant-designed graphs. Processor B is a valid connected nine-node bidirectional 3×3 grid labeled custom. README, report, executed notebook and final JSON tables contain accuracy, label-1 recall and F1 for logistic, exact VQC and noisy A/B. Label 1 is explicitly non-clinical.
 - [x] Deterministic transpilation-only SWAP trace with Qiskit 2.5.2: 6 explicit SWAP nodes after `SabreLayout` for A and 0 for B. Method and compiler settings are saved in `results/tables/q1_provisional_swap_diagnostic.json`; existing benchmark outputs and final +16 CX/+15 depth versus zero/zero overhead were preserved.
 - [x] Focused discrepancy checks: 7/7 routing, processor configuration, dataset identity and artifact tests passed. Independent consistency checks passed for graph validity, repeatable 6/0 SWAP traces, +16/+15 versus 0/0 overhead, required metrics in JSON/notebook, and non-clinical label wording. Corrected and historical model hashes remain unchanged.
@@ -30,18 +30,19 @@
 - [ ] **Organizer confirmation:** Master Guide's literal `make_classification` call fails under scikit-learn defaults. Confirm that `n_redundant=0` is accepted, or rerun/relabel the benchmark under the organizer's corrected generator instruction. This provisional assumption remains a compliance blocker.
 - [x] **New rubric confirmation:** the team reports organizer confirmation of the five categories and 70/30 weighting. The updated announcement file is not included in the local PDF directory; the Master Guide copy retains its earlier rubric. Processor D remains a conceptual illustration only, as the Master Guide reserves D execution for Phase 2.
 - [x] **Team/identity information:** README identifies MOM'S MAGIC and its three members: MATTA VIJAY, GUDE YUVA NIKESH, and BOLLA DINESH KUMAR. The team reports organizer confirmation for Phase 1.
-- [x] **Local Git preparation:** initialized a local Git repository on branch `main`; reviewed the `git add --dry-run --all` file list and staged the package for final diff review. No commit exists and no remote is configured.
+- [x] **Local Git preparation:** repository is on branch `main`; the package is committed as `460fb808c23d1d852381c89b214432f6f8a925e0` and remote `origin` points to the team-provided GitHub repository.
 - [ ] **Git author:** `user.name` and `user.email` are not configured locally or globally. Supply the team's preferred commit author name and email before committing.
-- [ ] **Publication:** branch `main` currently has all 111 files staged as additions, but there is no commit or configured GitHub remote. After the team's approval, set the author identity and remote URL, commit, push, verify public access, and submit the public URL through the portal. No remote, push, public access or portal submission has occurred.
+- [x] **Publication:** pushed branch `main` to [the public GitHub repository](https://github.com/vijay672/Biomedical-Signal-Classifier-using-Quantum-Machine-Learning-QML-). Verified the repository's public visibility through the GitHub API and confirmed the remote branch points to commit `460fb808c23d1d852381c89b214432f6f8a925e0`.
+- [ ] **Portal submission:** submit the public repository URL through the organizer portal. No portal receipt is available in this repository.
 - [ ] **Final review:** inspect the provisional assumption, report, notebook output size and repository visibility before publication. No clinical or quantum-advantage claim should be added without evidence.
 
 ## Reproduce locally
 
 From a clean checkout with Python 3.11.15, run the commands in `README.md`. With complete committed artifacts, the corrected CLI validates and loads them; if the manifest is absent it trains once and writes `results/tables/q1_provisional_*` and `results/figures/*.svg`. Open/run `main.ipynb` using the environment's Python kernel; complete artifacts are validated and displayed without retraining. If the organizer provides a different dataset correction, save it as a new experiment and preserve this provisional evidence.
 
-## GitHub publication commands — run only after approval
+## GitHub publication commands — completed 2026-10-17
 
-The local repository already has branch `main`. Replace the remote URL below with the public repository URL you create. Review the staged file list and diff before committing.
+The branch and remote below match the published repository. These commands were run after explicit team authorization.
 
 ```sh
 git status --short --ignored
@@ -49,11 +50,11 @@ git add --all
 git diff --cached --check
 git diff --cached --stat
 git diff --cached
-git config user.name "YOUR_PREFERRED_AUTHOR_NAME"
-git config user.email "YOUR_PREFERRED_AUTHOR_EMAIL"
-git commit -m "Prepare QFF 2026 Q1 Phase 1 submission"
-git remote add origin https://github.com/ORG_OR_USER/REPOSITORY.git
+git config user.name "MOM'S MAGIC"
+git config user.email "226694861+vijay672@users.noreply.github.com"
+git commit -m "Finalize QFF 2026 Q1 Phase 1 submission"
+git remote add origin https://github.com/vijay672/Biomedical-Signal-Classifier-using-Quantum-Machine-Learning-QML-.git
 git push --set-upstream origin main
 ```
 
-After pushing, verify the repository is publicly accessible and submit its public URL at the portal listed in the Master Guide. Only local staging and validation commands have been run; no commit, remote, push, public access or portal submission has occurred.
+The push and public visibility checks passed. Submit the public URL through the portal listed in the organizer instructions to complete the external submission.

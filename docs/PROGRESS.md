@@ -112,3 +112,10 @@ Confirm the provisional `n_redundant=0` generator correction with organizers if 
 - Updated README, report, judge summary and executed notebook with the five task-supplied judging categories, explicit circuit limitation, D caveat and evidence links. Added the [rubric audit](FINAL_OFFICIAL_RUBRIC_AUDIT.md) and refreshed [verification evidence](FINAL_VERIFICATION.md).
 - Full suite: **42/42 passed**; `pip check` passed; all eight notebook code cells executed with outputs. Staged-export replay ran seven CLIs plus notebook without retraining; official model, A/B benchmark and manifest SHA256 identities remained unchanged. All seven saved classification cases were independently recalculated; 22 JSON and 20 SVG files parsed.
 - Remaining tasks are organizer clarification of `n_redundant=0`, access to the newer rubric announcement, and confirmation that submission is permitted after the October 14 deadline. No commit, remote, push or portal submission occurred.
+
+## 2026-10-17 — template README and public release
+
+- Replaced the README with the team's research template, adapting its reproduction instructions to commands verified in this repository. Added the six output-inert parameter names and links to their circuit tests; no source implementation, model weights or benchmark outputs changed.
+- Re-ran the suite: **42/42 passed**; `pip check` and final link/package scans passed.
+- Committed all 111 files on `main` as `460fb808c23d1d852381c89b214432f6f8a925e0` and pushed to the team-provided public GitHub repository. GitHub API and `git ls-remote` confirmed public visibility and the published `main` ref.
+- The team still needs to submit the public repository URL through the organizer portal and retain the portal receipt. The `n_redundant=0` dataset correction remains clearly labeled provisional.
